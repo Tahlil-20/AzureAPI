@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../AzureFunction-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.BalanceDisplaHandler.execute",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "request",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
